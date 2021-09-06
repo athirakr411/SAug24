@@ -6,14 +6,14 @@ import org.junit.runner.RunWith;
 
 
 
-@RunWith(Cucumber.class)
+/*@RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources/features",
         glue={"stepDefinitions"},
         monochrome = true,//results will be organized//without this also no pblm
         publish=true,//to get cucumber reports
         tags="@SanityFlow",
         plugin={"pretty", "html:target/cucumber-html-report.html", "json:target/cucumber.json", "junit:target/cucumber.xml", "rerun:target/rerun.txt"})
-
+*/
 public class RunnerTest {
     public static void main(String[] args) {
         System.out.println("git");
