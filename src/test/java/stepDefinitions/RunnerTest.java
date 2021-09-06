@@ -15,7 +15,9 @@ import org.junit.runner.RunWith;
         plugin={"pretty", "html:target/cucumber-html-report.html", "json:target/cucumber.json", "junit:target/cucumber.xml", "rerun:target/rerun.txt"})
 
 public class RunnerTest {
-
+    public static void main(String[] args) {
+        System.out.println("git");
+    }
 }
 
 //console-click on cucumber reports link-you can also share reports
@@ -40,4 +42,17 @@ public class RunnerTest {
 //click on git-commit,push,pull everything wiill be there
 //2 teammembers changed same session of code at same time
 //if they tried to push to git repository at the same time there is a conflict,resolutions are done by test lead
-//
+//git commit and push
+//we will be pushing multiple times a day
+//to get a new one we have to pull it
+//just pull every time
+
+//file-new-project from version control-you can paste git url here
+//change path-directory
+//to update it -git-pull-you can slct branch you want to update
+
+//merge-to join 2 branches
+//rebase-to make a sudden change to already changed project
+//branches-to create new branch
+
+
