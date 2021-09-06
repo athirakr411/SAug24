@@ -1,0 +1,3 @@
+pages\AmazonHPF.class
+stepDefinitions\AmazonSearchStepDefinitions.class
+stepDefinitions\RunnerTest.class

@@ -1,0 +1,153 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-09-06T04:36:57.231Z",
+        "line": 13,
+        "name": "Search for a product and validate results",
+        "description": "",
+        "id": "validate-search-functionality;search-for-a-product-and-validate-results;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 95787000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "amazon webpage is launched",
+            "match": {
+              "location": "stepDefinitions.AmazonSearchStepDefinitions.amazon_webpage_is_launched()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 18299000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters a \"TV\" in the search box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"TV\"",
+                  "offset": 14
+                }
+              ],
+              "location": "stepDefinitions.AmazonSearchStepDefinitions.userEntersAInTheSearchBox(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 34189000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "clicks on search button",
+            "match": {
+              "location": "stepDefinitions.AmazonSearchStepDefinitions.clicksOnSearchButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 21491000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "search results should be displayed",
+            "match": {
+              "location": "stepDefinitions.AmazonSearchStepDefinitions.searchResultsShouldBeDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SanityFlow"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-06T04:39:49.584Z",
+        "line": 14,
+        "name": "Search for a product and validate results",
+        "description": "",
+        "id": "validate-search-functionality;search-for-a-product-and-validate-results;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 33410000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "amazon webpage is launched",
+            "match": {
+              "location": "stepDefinitions.AmazonSearchStepDefinitions.amazon_webpage_is_launched()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1998000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters a \"Phones\" in the search box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Phones\"",
+                  "offset": 14
+                }
+              ],
+              "location": "stepDefinitions.AmazonSearchStepDefinitions.userEntersAInTheSearchBox(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 16215000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "clicks on search button",
+            "match": {
+              "location": "stepDefinitions.AmazonSearchStepDefinitions.clicksOnSearchButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3375000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "search results should be displayed",
+            "match": {
+              "location": "stepDefinitions.AmazonSearchStepDefinitions.searchResultsShouldBeDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SanityFlow"
+          }
+        ]
+      }
+    ],
+    "name": "Validate search functionality",
+    "description": "",
+    "id": "validate-search-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/amazonsearch.feature",
+    "tags": []
+  }
+]
