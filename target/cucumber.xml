@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="227.983">
-<testcase classname="Validate search functionality" name="Search for a product and validate results" time="170.865">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="194.943">
+<testcase classname="Validate search functionality" name="Search for a product and validate results" time="186.658">
+<system-out><![CDATA[Given amazon webpage is launched............................................passed
+When user enters a "macbook" in the search box..............................passed
+And clicks on search button.................................................passed
+Then search results should be displayed.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Validate search functionality" name="Search for a product and validate results 2" time="186.657">
 <system-out><![CDATA[Given amazon webpage is launched............................................passed
 When user enters a "TV" in the search box...................................passed
 And clicks on search button.................................................passed
 Then search results should be displayed.....................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Validate search functionality" name="Search for a product and validate results 2" time="55.078">
+<testcase classname="Validate Parallel Run" name="Search for a product and validate results" time="194.256">
 <system-out><![CDATA[Given amazon webpage is launched............................................passed
-When user enters a "Phones" in the search box...............................passed
+When user enters a "something" in the search box............................passed
 And clicks on search button.................................................passed
 Then search results should be displayed.....................................passed
 ]]></system-out>

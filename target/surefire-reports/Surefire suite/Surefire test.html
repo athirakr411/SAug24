@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Sep 06 00:36:54 EDT 2021</td>
+<td>Started on:</td><td>Fri Sep 10 15:50:19 EDT 2021</td>
 </tr>
-<tr><td>Total time:</td><td>240 seconds (240385 ms)</td>
+<tr><td>Total time:</td><td>82 seconds (82025 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,5 +67,349 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='stepDefinitions.parallelRunnerTest.runScenario()'><b>runScenario</b><br>Test class: stepDefinitions.parallelRunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search for a product and validate results", "Optional[Validate search functionality]"</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: DevToolsActivePort file doesn&apos;t exist
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-KV9BC2T&apos;, ip: &apos;192.168.2.25&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00C82A33+2501171]
+	Ordinal0 [0x00C1D1C1+2085313]
+	Ordinal0 [0x00B21FA8+1056680]
+	Ordinal0 [0x00B3F582+1176962]
+	Ordinal0 [0x00B3BF09+1163017]
+	Ordinal0 [0x00B3997F+1153407]
+	Ordinal0 [0x00B6999F+1350047]
+	Ordinal0 [0x00B6960A+1349130]
+	Ordinal0 [0x00B6551B+1332507]
+	Ordinal0 [0x00B41D74+1187188]
+	Ordinal0 [0x00B42BD9+1190873]
+	GetHandleVerifier [0x00DFEFE6+1504438]
+	GetHandleVerifier [0x00EADDA5+2220661]
+	GetHandleVerifier [0x00D05589+481881]
+	GetHandleVerifier [0x00D04639+477961]
+	Ordinal0 [0x00C228BD+2107581]
+	Ordinal0 [0x00C26728+2123560]
+	Ordinal0 [0x00C26862+2123874]
+	Ordinal0 [0x00C2FA81+2161281]
+	BaseThreadInitThunk [0x7670FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77997A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x77997A4E+238]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at stepDefinitions.AmazonSearchStepDefinitions.cucumberSetup(AmazonSearchStepDefinitions.java:28)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace284914140", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace284914140'><pre>org.openqa.selenium.WebDriverException: unknown error: DevToolsActivePort file doesn&apos;t exist
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-KV9BC2T&apos;, ip: &apos;192.168.2.25&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00C82A33+2501171]
+	Ordinal0 [0x00C1D1C1+2085313]
+	Ordinal0 [0x00B21FA8+1056680]
+	Ordinal0 [0x00B3F582+1176962]
+	Ordinal0 [0x00B3BF09+1163017]
+	Ordinal0 [0x00B3997F+1153407]
+	Ordinal0 [0x00B6999F+1350047]
+	Ordinal0 [0x00B6960A+1349130]
+	Ordinal0 [0x00B6551B+1332507]
+	Ordinal0 [0x00B41D74+1187188]
+	Ordinal0 [0x00B42BD9+1190873]
+	GetHandleVerifier [0x00DFEFE6+1504438]
+	GetHandleVerifier [0x00EADDA5+2220661]
+	GetHandleVerifier [0x00D05589+481881]
+	GetHandleVerifier [0x00D04639+477961]
+	Ordinal0 [0x00C228BD+2107581]
+	Ordinal0 [0x00C26728+2123560]
+	Ordinal0 [0x00C26862+2123874]
+	Ordinal0 [0x00C2FA81+2161281]
+	BaseThreadInitThunk [0x7670FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77997A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x77997A4E+238]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at stepDefinitions.AmazonSearchStepDefinitions.cucumberSetup(AmazonSearchStepDefinitions.java:28)
+</pre></div></td>
+<td>69</td>
+<td>stepDefinitions.parallelRunnerTest@457e2f02</td></tr>
+<tr>
+<td title='stepDefinitions.parallelRunnerTest.runScenario()'><b>runScenario</b><br>Test class: stepDefinitions.parallelRunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search for a product and validate results", "Optional[Validate search functionality]"</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: DevToolsActivePort file doesn&apos;t exist
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-KV9BC2T&apos;, ip: &apos;192.168.2.25&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00C82A33+2501171]
+	Ordinal0 [0x00C1D1C1+2085313]
+	Ordinal0 [0x00B21FA8+1056680]
+	Ordinal0 [0x00B3F582+1176962]
+	Ordinal0 [0x00B3BF09+1163017]
+	Ordinal0 [0x00B3997F+1153407]
+	Ordinal0 [0x00B6999F+1350047]
+	Ordinal0 [0x00B6960A+1349130]
+	Ordinal0 [0x00B6551B+1332507]
+	Ordinal0 [0x00B41D74+1187188]
+	Ordinal0 [0x00B42BD9+1190873]
+	GetHandleVerifier [0x00DFEFE6+1504438]
+	GetHandleVerifier [0x00EADDA5+2220661]
+	GetHandleVerifier [0x00D05589+481881]
+	GetHandleVerifier [0x00D04639+477961]
+	Ordinal0 [0x00C228BD+2107581]
+	Ordinal0 [0x00C26728+2123560]
+	Ordinal0 [0x00C26862+2123874]
+	Ordinal0 [0x00C2FA81+2161281]
+	BaseThreadInitThunk [0x7670FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77997A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x77997A4E+238]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at stepDefinitions.AmazonSearchStepDefinitions.cucumberSetup(AmazonSearchStepDefinitions.java:28)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace405971657", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace405971657'><pre>org.openqa.selenium.WebDriverException: unknown error: DevToolsActivePort file doesn&apos;t exist
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-KV9BC2T&apos;, ip: &apos;192.168.2.25&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00C82A33+2501171]
+	Ordinal0 [0x00C1D1C1+2085313]
+	Ordinal0 [0x00B21FA8+1056680]
+	Ordinal0 [0x00B3F582+1176962]
+	Ordinal0 [0x00B3BF09+1163017]
+	Ordinal0 [0x00B3997F+1153407]
+	Ordinal0 [0x00B6999F+1350047]
+	Ordinal0 [0x00B6960A+1349130]
+	Ordinal0 [0x00B6551B+1332507]
+	Ordinal0 [0x00B41D74+1187188]
+	Ordinal0 [0x00B42BD9+1190873]
+	GetHandleVerifier [0x00DFEFE6+1504438]
+	GetHandleVerifier [0x00EADDA5+2220661]
+	GetHandleVerifier [0x00D05589+481881]
+	GetHandleVerifier [0x00D04639+477961]
+	Ordinal0 [0x00C228BD+2107581]
+	Ordinal0 [0x00C26728+2123560]
+	Ordinal0 [0x00C26862+2123874]
+	Ordinal0 [0x00C2FA81+2161281]
+	BaseThreadInitThunk [0x7670FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77997A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x77997A4E+238]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at stepDefinitions.AmazonSearchStepDefinitions.cucumberSetup(AmazonSearchStepDefinitions.java:28)
+</pre></div></td>
+<td>69</td>
+<td>stepDefinitions.parallelRunnerTest@457e2f02</td></tr>
+<tr>
+<td title='stepDefinitions.parallelRunnerTest.runScenario()'><b>runScenario</b><br>Test class: stepDefinitions.parallelRunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search for a product and validate results", "Optional[Validate Parallel Run]"</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: DevToolsActivePort file doesn&apos;t exist
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-KV9BC2T&apos;, ip: &apos;192.168.2.25&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00C82A33+2501171]
+	Ordinal0 [0x00C1D1C1+2085313]
+	Ordinal0 [0x00B21FA8+1056680]
+	Ordinal0 [0x00B3F582+1176962]
+	Ordinal0 [0x00B3BF09+1163017]
+	Ordinal0 [0x00B3997F+1153407]
+	Ordinal0 [0x00B6999F+1350047]
+	Ordinal0 [0x00B6960A+1349130]
+	Ordinal0 [0x00B6551B+1332507]
+	Ordinal0 [0x00B41D74+1187188]
+	Ordinal0 [0x00B42BD9+1190873]
+	GetHandleVerifier [0x00DFEFE6+1504438]
+	GetHandleVerifier [0x00EADDA5+2220661]
+	GetHandleVerifier [0x00D05589+481881]
+	GetHandleVerifier [0x00D04639+477961]
+	Ordinal0 [0x00C228BD+2107581]
+	Ordinal0 [0x00C26728+2123560]
+	Ordinal0 [0x00C26862+2123874]
+	Ordinal0 [0x00C2FA81+2161281]
+	BaseThreadInitThunk [0x7670FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77997A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x77997A4E+238]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at stepDefinitions.AmazonSearchStepDefinitions.cucumberSetup(AmazonSearchStepDefinitions.java:28)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1759117754", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1759117754'><pre>org.openqa.selenium.WebDriverException: unknown error: DevToolsActivePort file doesn&apos;t exist
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-KV9BC2T&apos;, ip: &apos;192.168.2.25&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00C82A33+2501171]
+	Ordinal0 [0x00C1D1C1+2085313]
+	Ordinal0 [0x00B21FA8+1056680]
+	Ordinal0 [0x00B3F582+1176962]
+	Ordinal0 [0x00B3BF09+1163017]
+	Ordinal0 [0x00B3997F+1153407]
+	Ordinal0 [0x00B6999F+1350047]
+	Ordinal0 [0x00B6960A+1349130]
+	Ordinal0 [0x00B6551B+1332507]
+	Ordinal0 [0x00B41D74+1187188]
+	Ordinal0 [0x00B42BD9+1190873]
+	GetHandleVerifier [0x00DFEFE6+1504438]
+	GetHandleVerifier [0x00EADDA5+2220661]
+	GetHandleVerifier [0x00D05589+481881]
+	GetHandleVerifier [0x00D04639+477961]
+	Ordinal0 [0x00C228BD+2107581]
+	Ordinal0 [0x00C26728+2123560]
+	Ordinal0 [0x00C26862+2123874]
+	Ordinal0 [0x00C2FA81+2161281]
+	BaseThreadInitThunk [0x7670FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77997A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x77997A4E+238]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at stepDefinitions.AmazonSearchStepDefinitions.cucumberSetup(AmazonSearchStepDefinitions.java:28)
+</pre></div></td>
+<td>69</td>
+<td>stepDefinitions.parallelRunnerTest@457e2f02</td></tr>
+</table><p>
 </body>
 </html>

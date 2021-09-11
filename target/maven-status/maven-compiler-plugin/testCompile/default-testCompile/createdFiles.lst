@@ -1,3 +1,4 @@
-pages\AmazonHPF.class
 stepDefinitions\AmazonSearchStepDefinitions.class
 stepDefinitions\RunnerTest.class
+pages\AmazonHPF.class
+stepDefinitions\parallelRunnerTest.class

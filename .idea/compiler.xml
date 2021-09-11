@@ -7,7 +7,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="SAug26" />
+        <module name="SAug26parallel" />
         <module name="SAug24" />
+        <module name="SAug25" />
       </profile>
     </annotationProcessing>
   </component>

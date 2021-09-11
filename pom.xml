@@ -36,21 +36,13 @@
             <version>6.11.0</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>6.11</version>
-        </dependency>
+
         <dependency>
             <groupId>tech.grasshopper</groupId>
             <artifactId>extentreports-cucumber6-adapter</artifactId>
             <version>2.8.3</version>
         </dependency>
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-testng</artifactId>
-            <version>6.11.0</version>
-        </dependency>
+
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
@@ -61,25 +53,59 @@
             <artifactId>webdrivermanager</artifactId>
             <version>4.4.3</version>
         </dependency>
+        <!--        PARALLEL RUNNER-ORG.TESTNG & cucumber-testng NEEDED-to run scenarios in parallel-->
+             <dependency>
+                <groupId>org.testng</groupId>
+                <artifactId>testng</artifactId>
+                <version>6.11</version>
+            </dependency>
+            <dependency>
+                <groupId>io.cucumber</groupId>
+                <artifactId>cucumber-testng</artifactId>
+                <version>6.11.0</version>
+            </dependency>
+
 
     </dependencies>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.0.0-M5</version>
-            </plugin>
 
-        </plugins>
-    </build>
 
+
+
+  <!--compiler and surefire plugins are to build maven projects
+  cucumber testng & cucumber junit allows to run feature files in parallel or scenarios of the feature
+    in parallel-->
+
+        <!--plugins should be added in build
+        to add plugins just remove dependecy
+        runner class should be included in include
+        THReadcount-how many browsers in parallel
+
+        plugins to run features in parallel
+
+
+-->
+        <!--    parallel run-to run scenarios in parallel-to run scenarios in parallel-filessafe is nt needed
+            you can also give how many threads you want-->
+            <build>
+              <plugins>
+                  <plugin>
+                      <groupId>org.apache.maven.plugins</groupId>
+                      <artifactId>maven-compiler-plugin</artifactId>
+                      <version>3.8.1</version>
+                  </plugin>
+                  <plugin>
+                      <groupId>org.apache.maven.plugins</groupId>
+                      <artifactId>maven-surefire-plugin</artifactId>
+                      <version>3.0.0-M5</version>
+                      <configuration>
+                          <includes>
+                              <include>**/parallelRunnerTest.java</include>
+                          </includes>
+                          <parallel>methods</parallel>
+                          <useUnlimitedThreads>true</useUnlimitedThreads>
+                      </configuration>
+                  </plugin>
+              </plugins>
+          </build>
 
 </project>
-
-<!--compiler and surefire plugins are to build maven projects-->

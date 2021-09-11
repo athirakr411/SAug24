@@ -3,32 +3,281 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-09-06T04:36:57.231Z",
-        "line": 13,
+        "line": 4,
+        "name": "user launches webpage",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 50229000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.AmazonSearchStepDefinitions.beforestep()"
+                }
+              }
+            ],
+            "line": 5,
+            "name": "amazon webpage is launched",
+            "match": {
+              "location": "stepDefinitions.AmazonSearchStepDefinitions.amazon_webpage_is_launched()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.AmazonSearchStepDefinitions.afterstep()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-10T20:10:04.351Z",
+        "before": [
+          {
+            "result": {
+              "duration": 78503000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.AmazonSearchStepDefinitions.cucumberSetup()"
+            }
+          }
+        ],
+        "line": 34,
         "name": "Search for a product and validate results",
         "description": "",
         "id": "validate-search-functionality;search-for-a-product-and-validate-results;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 8953000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.AmazonSearchStepDefinitions.tearDown()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 95787000000,
+              "duration": 13646000000,
               "status": "passed"
             },
-            "line": 6,
+            "before": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.AmazonSearchStepDefinitions.beforestep()"
+                }
+              }
+            ],
+            "line": 28,
+            "name": "user enters a \"macbook\" in the search box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"macbook\"",
+                  "offset": 14
+                }
+              ],
+              "location": "stepDefinitions.AmazonSearchStepDefinitions.userEntersAInTheSearchBox(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.AmazonSearchStepDefinitions.afterstep()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 35117000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.AmazonSearchStepDefinitions.beforestep()"
+                }
+              }
+            ],
+            "line": 29,
+            "name": "clicks on search button",
+            "match": {
+              "location": "stepDefinitions.AmazonSearchStepDefinitions.clicksOnSearchButton()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.AmazonSearchStepDefinitions.afterstep()"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.AmazonSearchStepDefinitions.beforestep()"
+                }
+              }
+            ],
+            "line": 30,
+            "name": "search results should be displayed",
+            "match": {
+              "location": "stepDefinitions.AmazonSearchStepDefinitions.searchResultsShouldBeDisplayed()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.AmazonSearchStepDefinitions.afterstep()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionFlow"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "user launches webpage",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 50443000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.AmazonSearchStepDefinitions.beforestep()"
+                }
+              }
+            ],
+            "line": 5,
             "name": "amazon webpage is launched",
             "match": {
               "location": "stepDefinitions.AmazonSearchStepDefinitions.amazon_webpage_is_launched()"
             },
+            "after": [
+              {
+                "result": {
+                  "duration": 2000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.AmazonSearchStepDefinitions.afterstep()"
+                }
+              }
+            ],
             "keyword": "Given "
-          },
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-10T20:10:04.351Z",
+        "before": [
           {
             "result": {
-              "duration": 18299000000,
+              "duration": 78503000000,
               "status": "passed"
             },
-            "line": 7,
+            "match": {
+              "location": "stepDefinitions.AmazonSearchStepDefinitions.cucumberSetup()"
+            }
+          }
+        ],
+        "line": 51,
+        "name": "Search for a product and validate results",
+        "description": "",
+        "id": "validate-search-functionality;search-for-a-product-and-validate-results;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 6421000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.AmazonSearchStepDefinitions.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 13382000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.AmazonSearchStepDefinitions.beforestep()"
+                }
+              }
+            ],
+            "line": 45,
             "name": "user enters a \"TV\" in the search box",
             "match": {
               "arguments": [
@@ -39,106 +288,86 @@
               ],
               "location": "stepDefinitions.AmazonSearchStepDefinitions.userEntersAInTheSearchBox(java.lang.String)"
             },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 34189000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "clicks on search button",
-            "match": {
-              "location": "stepDefinitions.AmazonSearchStepDefinitions.clicksOnSearchButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 21491000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "search results should be displayed",
-            "match": {
-              "location": "stepDefinitions.AmazonSearchStepDefinitions.searchResultsShouldBeDisplayed()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@SanityFlow"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-09-06T04:39:49.584Z",
-        "line": 14,
-        "name": "Search for a product and validate results",
-        "description": "",
-        "id": "validate-search-functionality;search-for-a-product-and-validate-results;;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 33410000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "amazon webpage is launched",
-            "match": {
-              "location": "stepDefinitions.AmazonSearchStepDefinitions.amazon_webpage_is_launched()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1998000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user enters a \"Phones\" in the search box",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Phones\"",
-                  "offset": 14
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.AmazonSearchStepDefinitions.afterstep()"
                 }
-              ],
-              "location": "stepDefinitions.AmazonSearchStepDefinitions.userEntersAInTheSearchBox(java.lang.String)"
-            },
+              }
+            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 16215000000,
+              "duration": 37766000000,
               "status": "passed"
             },
-            "line": 8,
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.AmazonSearchStepDefinitions.beforestep()"
+                }
+              }
+            ],
+            "line": 46,
             "name": "clicks on search button",
             "match": {
               "location": "stepDefinitions.AmazonSearchStepDefinitions.clicksOnSearchButton()"
             },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.AmazonSearchStepDefinitions.afterstep()"
+                }
+              }
+            ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 3375000000,
               "status": "passed"
             },
-            "line": 9,
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.AmazonSearchStepDefinitions.beforestep()"
+                }
+              }
+            ],
+            "line": 47,
             "name": "search results should be displayed",
             "match": {
               "location": "stepDefinitions.AmazonSearchStepDefinitions.searchResultsShouldBeDisplayed()"
             },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.AmazonSearchStepDefinitions.afterstep()"
+                }
+              }
+            ],
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@SanityFlow"
+            "name": "@RegressionFlow"
           }
         ]
       }
@@ -148,6 +377,201 @@
     "id": "validate-search-functionality",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/amazonsearch.feature",
+    "tags": []
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 5,
+        "name": "user launches webpage",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 43217000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.AmazonSearchStepDefinitions.beforestep()"
+                }
+              }
+            ],
+            "line": 6,
+            "name": "amazon webpage is launched",
+            "match": {
+              "location": "stepDefinitions.AmazonSearchStepDefinitions.amazon_webpage_is_launched()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.AmazonSearchStepDefinitions.afterstep()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-10T20:10:04.351Z",
+        "before": [
+          {
+            "result": {
+              "duration": 78503000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.AmazonSearchStepDefinitions.cucumberSetup()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Search for a product and validate results",
+        "description": "",
+        "id": "validate-parallel-run;search-for-a-product-and-validate-results;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 17250000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.AmazonSearchStepDefinitions.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 20628000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.AmazonSearchStepDefinitions.beforestep()"
+                }
+              }
+            ],
+            "line": 10,
+            "name": "user enters a \"something\" in the search box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"something\"",
+                  "offset": 14
+                }
+              ],
+              "location": "stepDefinitions.AmazonSearchStepDefinitions.userEntersAInTheSearchBox(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.AmazonSearchStepDefinitions.afterstep()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 34400000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.AmazonSearchStepDefinitions.beforestep()"
+                }
+              }
+            ],
+            "line": 11,
+            "name": "clicks on search button",
+            "match": {
+              "location": "stepDefinitions.AmazonSearchStepDefinitions.clicksOnSearchButton()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.AmazonSearchStepDefinitions.afterstep()"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 13000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.AmazonSearchStepDefinitions.beforestep()"
+                }
+              }
+            ],
+            "line": 12,
+            "name": "search results should be displayed",
+            "match": {
+              "location": "stepDefinitions.AmazonSearchStepDefinitions.searchResultsShouldBeDisplayed()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 3000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.AmazonSearchStepDefinitions.afterstep()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionFlow"
+          }
+        ]
+      }
+    ],
+    "name": "Validate Parallel Run",
+    "description": "",
+    "id": "validate-parallel-run",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/amazonsearch2.feature",
     "tags": []
   }
 ]
